@@ -1,4 +1,4 @@
-package com.demo.concurrency;
+package com.demo.concurrency.example.count;
 
 
 import com.demo.concurrency.annotation.NotThreadSafe;
@@ -14,7 +14,7 @@ import java.util.concurrent.Semaphore;
  */
 @Slf4j
 @NotThreadSafe
-public class ConcurrencyTest {
+public class CountExample1 {
     //请求总数
     public static int clientTotal = 5000;
     //并发执行的线程数
