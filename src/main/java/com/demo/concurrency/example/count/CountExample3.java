@@ -22,6 +22,7 @@ public class CountExample3 {
     public static volatile int count = 0;
 
     public static void main(String[] args) throws InterruptedException {
+        
         ExecutorService executorService = Executors.newCachedThreadPool();
         final Semaphore semaphore = new Semaphore(threadTotal);
         final CountDownLatch countDownLatch = new CountDownLatch(clientTotal);
